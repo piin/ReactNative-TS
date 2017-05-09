@@ -4,12 +4,13 @@ import { View, Text, StyleSheet, ViewStyle, TextStyle } from "react-native";
 interface Props {}
 interface State {}
 
-export default class App extends Component<Props, State> {
-    render() {
+export default class App extends React.Component<Props, State> {
+
+    public render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Welcome to React Native 123
+                    Welcome to React Native
                 </Text>
                 <Text style={styles.instructions}>
                     To get started, edit index.ios.js
@@ -25,9 +26,9 @@ export default class App extends Component<Props, State> {
 
 const styles = StyleSheet.create({
     container: {
+        alignItems: "center",
         flex: 1,
         justifyContent: "center",
-        alignItems: "center",
         backgroundColor: "#F5FCFF",
     } as ViewStyle,
 
