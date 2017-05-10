@@ -1,46 +1,15 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, ViewStyle, TextStyle } from "react-native";
+import Header from "./components/header";
 
-interface Props {}
-interface State {}
+interface IProps {}
+interface IState {}
 
-export default class App extends React.Component<Props, State> {
+export default class App extends React.Component<IProps, IState> {
 
     public render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to React Native
-                </Text>
-                <Text style={styles.instructions}>
-                    To get started, edit index.ios.js
-                </Text>
-                <Text style={styles.instructions}>
-                    Press Cmd+R to reload, {"\n"}
-                    Cmd+D or shake for dev menu
-                </Text>
-            </View>
+            <Header />
         );
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        alignItems: "center",
-        flex: 1,
-        justifyContent: "center",
-        backgroundColor: "#F5FCFF",
-    } as ViewStyle,
-
-    welcome: {
-        fontSize: 20,
-        textAlign: "center",
-        margin: 10,
-    } as TextStyle,
-
-    instructions: {
-        textAlign: "center",
-        color: "#333333",
-        marginBottom: 5,
-    } as TextStyle,
-});

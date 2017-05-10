@@ -37,6 +37,7 @@ yarn run ios
 
 ### Android
 
+In order to use "yarn run android", you have to change your android sdk dir, in android/local.properties
 ```sh
 yarn run android
 ```
