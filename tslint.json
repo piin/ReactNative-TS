@@ -5,13 +5,26 @@
     ],
     "jsRules": {},
     "rules": {
+        "no-unused-expression": false,
         "ordered-imports": [
             false
         ],
         "no-empty-interface":[
             false
         ],
-        "object-literal-sort-keys": false
+        "object-literal-sort-keys": false,
+        "quotemark": [
+            false
+        ],
+        "no-console": [
+            false
+        ],
+        "member-ordering": [
+            false
+        ],
+        "no-debugger": false,
+        "arrow-parens": false,
+        "no-trailing-whitespace": false
     },
     "rulesDirectory": []
 } 
